@@ -1,0 +1,20 @@
+== README
+{{
+	rails g model Listing home_type:string pet_type:string pet_size:string breeding_years:integer address:string listing_title:string listing_content:text price_pernight:integer active:boolean user:references
+
+	必要な項目
+	・家のタイプ home_type:string
+	・飼っているペットの種類 pet_type:string
+	・扱い可能なペットのサイズ pet_size:string
+	・対象のペットの飼育年数 breeding_years:integer
+
+	・住所 address:string
+	・リスティングのタイトル listing_title:string
+	・リスティングの内容 listing_content:text
+	・一泊あたりの値段 price_pernight:integer
+	・公開/非公開 active:boolean
+
+	他のモデルとの関係性
+	・Userは複数のリスティングを持てる user:references
+
+}}
